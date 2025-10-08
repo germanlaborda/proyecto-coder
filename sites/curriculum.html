@@ -3,66 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum - Germán Laborda</title>
+  <title>Currículum - Germán Laborda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="curriculum.html">Curriculum</a></li>
-        <li><a href="fotos.html">Galería de Fotos</a></li>
-        <li><a href="videos.html">Galería de Videos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+
+<body class="cv-body">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg cv-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">Germán Laborda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="curriculum.html">Currículum</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="fotos.html">Fotos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="videos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER BANNER -->
+  <header class="cv-banner">
+    <div class="cv-overlay">
+      <h1>Germán Laborda</h1>
+      <p>Fundador de Fundación Empate · Emprendedor Social · Desarrollador</p>
+    </div>
   </header>
 
-  <main>
-    <h1>Curriculum</h1>
-    <h2>Perfil</h2>
-      <h4>Presidente y Fundador de Fundación Empate</h4>
-      <h4>Secretario Federación Argentina de Deportes para Atletas con Síndrome de Down (FADASD)</h4>
-      <h4>Emprendedor Social</h4>
-      <h4>Analista en Sistemas de Información</h4>
-      <h4>Desarrollador Software Genexus</h4>  
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="cv-container">
+    
+    <!-- PERFIL -->
+    <section class="cv-section perfil">
+      <h2>Perfil</h2>
+      <div class="cv-card-grid">
+        <div class="cv-card">
+          <p>Presidente y Fundador de <strong>Fundación Empate</strong></p>
+        </div>
+        <div class="cv-card">
+          <p>Secretario de <strong>FADASD</strong></p>
+        </div>
+        <div class="cv-card">
+          <p>Emprendedor Social · Analista en Sistemas · Desarrollador Genexus</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- EXPERIENCIA -->
+    <section class="cv-section experiencia">
+      <h2>Experiencia Laboral</h2>
+      <div class="cv-timeline">
+        <div class="cv-timeline-item">
+          <h3>Caja de Jubilaciones, Pensiones y Retiros de Córdoba</h3>
+          <p class="fecha">2007 – presente</p>
+          <p class="cargo">Desarrollador Genexus</p>
+        </div>
+        <div class="cv-timeline-item">
+          <h3>Fundación Empate</h3>
+          <p class="fecha">2017 – presente</p>
+          <p class="cargo">Fundador y Presidente</p>
+        </div>
+        <div class="cv-timeline-item">
+          <h3>Federación Argentina de Deportes para Atletas con Síndrome de Down (FADASD)</h3>
+          <p class="fecha">2021 – presente</p>
+          <p class="cargo">Secretario</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Experiencia Laboral</h2>
-      <h4>Caja de Jubilaciones, Pensiones y Retiros de Córdoba | 2007 – presente</h4>
-      <h5>Desarrollador Genexus</h5>
-      <h4>Fundación Empate | 2017 – presente</h4>
-      <h5>Fundador y presidente</h5>
-      <h4>Federación Argentina de Deportes para Atletas con Síndrome de Down (FADASD) | 2021 – presente</h4>
-      <h5>Secretario</h5>
+    <!-- EDUCACIÓN -->
+    <section class="cv-section formacion">
+      <h2>Formación Académica</h2>
+      <div class="cv-grid-2">
+        <div class="cv-block">
+          <h4>Analista en Sistemas de Información</h4>
+          <p>Universidad Tecnológica Nacional (UTN)</p>
+        </div>
+        <div class="cv-block">
+          <h4>Posgrado en Organizaciones Sociales</h4>
+          <p>Universidad Católica Argentina</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Formación Académica</h2>
-      <h4>Analista en Sistemas de Información</h4>
-      <h5>Universidad Tecnológica Nacional (UTN)</h5>
-      <h4>Posgrado en Organizaciones Sociales</h4>
-      <h5>Universidad Catolica Argentina</h5>      
+    <!-- PREMIOS -->
+    <section class="cv-section premios">
+      <h2>Premios y Reconocimientos</h2>
+      <div class="cv-award-grid">
+        <div class="award-card">
+          <h5>Jerónimo de la Gente</h5>
+          <p>2017 · Municipalidad de Córdoba</p>
+        </div>
+        <div class="award-card">
+          <h5>Audiencia con Papa Francisco</h5>
+          <p>2017 · Roma, Italia</p>
+        </div>
+        <div class="award-card">
+          <h5>Premio Abanderados</h5>
+          <p>2019 · Buenos Aires</p>
+        </div>
+        <div class="award-card">
+          <h5>TedX Córdoba</h5>
+          <p>2021 · Orador y Embajador</p>
+        </div>
+        <div class="award-card">
+          <h5>Paris Peace Forum</h5>
+          <p>2023 · París, Francia</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Premios y Reconocimientos</h2>
-      <h4>Jerónimo de la Gente, Municipalidad de Córdoba </h4>  
-      <h5>2017 | Córdoba, Argentina</h5>     
-      <h4>Audiencia con Papa Francisco</h4>
-      <h5>2017 | Roma, Italia  </h5>
-      <h4>Cordobés del año (votación virtual La Voz del Interior)</h4>
-      <h5>2017 | Córdoba, Argentina  </h5>
-      <h4>Joven sobresaliente de la bolsa de comercio de CBA.</h4>
-      <h5>2019 | Córdoba, Argentina   </h5>
-      <h4>Premio Abanderados de la Argentina solidaria (premio abanderados)</h4>
-      <h5>2019 | Buenos Aires, Argentina    </h5>
-      <h4>Embajador y orador de TEDx Córdoba</h4>
-      <h5>2021 | Córdoba, Argentina </h5>
-      <h4>Orador en el Paris Peace Forum (Foro de la paz de Paris)</h4>
-      <h5>2023 | Paris, Francia </h5>
   </main>
 
-  <footer>
-    <img src="../medios/logo.png" alt="Logo Fundación" class="logo-footer">
-    <p>Germán Laborda - presidente y fundador de Fundación Empate</p>
+  <footer class="cv-footer">
+    <p>© 2025 Germán Laborda · Fundación Empate</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
