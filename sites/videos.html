@@ -3,107 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería de Videos - Germán Laborda</title>
+  <title>Galeria de videos - Germán Laborda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="curriculum.html">Curriculum</a></li>
-        <li><a href="fotos.html">Galería de Fotos</a></li>
-        <li><a href="videos.html">Galería de Videos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+
+<body class="cv-body">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg cv-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">Germán Laborda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="curriculum.html">Currículum</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="fotos.html">Fotos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="videos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER BANNER -->
+  <header class="cv-banner">
+    <div class="cv-overlay">
+      <h1>Galería de videos</h1>
+      <p>Videos institucionales · Spots · Charlas · Premiaciones</p>
+    </div>
   </header>
 
-  <main>
-    <h1>Galería de Videos</h1>
-    <section class="videos-grid">
+  <main class="container">
+
+    <section class="galeria-videos">
       <div class="video-item">
         <h3>Institucional Fundación Empate</h3>
         <iframe src="https://www.youtube.com/embed/j1ZOgMIi7fs?si=ayCvsRNib4X8NlVP" frameborder="0" allowfullscreen></iframe>
-      </div>      
+      </div>
       <div class="video-item">
         <h3>Spot "Yo me incluyo" Fundación Empate | 2017</h3>
         <iframe src="https://www.youtube.com/embed/Xn4AAhQ1IzY?si=ivxYNSvzp890wMMP" frameborder="0" allowfullscreen></iframe>
-      </div>      
+      </div>
       <div class="video-item">
-        <h3>Empatando ganamos todos | Germán Laborda | TEDxCordoba | 2021</h3>
+        <h3>Empatando ganamos todos | TEDxCordoba | 2021</h3>
         <iframe src="https://www.youtube.com/embed/cQczHYm7ao0?si=G5BNlI8GjamBZ9x0" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>Orador Paris Peace Forum - Sports - Inclusive and sustainable societies | Germán Laborda | 2023</h3>
+        <h3>Paris Peace Forum | 2023</h3>
         <iframe src="https://www.youtube.com/embed/gcMX_7F5cZQ?si=anQiuZK1MziOGza4" frameborder="0" allowfullscreen></iframe>
-      </div>      
+      </div>
       <div class="video-item">
-        <h3>Premio Abanderados | Germán Laborda | 2019</h3>
+        <h3>Premio Abanderados | 2019</h3>
         <iframe src="https://www.youtube.com/embed/lqM0NUVHbTY?si=e8491P49S9spuk5C" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>Gala Premio Abanderados | Germán Laborda | 2019</h3>
+        <h3>Gala Premio Abanderados | 2019</h3>
         <iframe src="https://www.youtube.com/embed/uQ42Z5zxLOM?si=vQPmKrOjcbTUxh74" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>Joven Sobresaliente - Bolsa de Comercio de Córdoba| Germán Laborda | 2019</h3>
+        <h3>Joven Sobresaliente - Bolsa de Comercio | 2019</h3>
         <iframe src="https://www.youtube.com/embed/NfeQh5K939A?si=BQtKI2FnWijBPjWa" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>Premiación Joven Sobresaliente - Bolsa de Comercio de Córdoba| Germán Laborda | 2019</h3>
+        <h3>Premiación Joven Sobresaliente | 2019</h3>
         <iframe src="https://www.youtube.com/embed/GWtuYzs5Boo?si=oHqKVS4rDcmC3XE8" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>Bien Cordobes - Punto a Punto | Germán Laborda | 2025</h3>
+        <h3>Bien Cordobés - Punto a Punto | 2025</h3>
         <iframe src="https://www.youtube.com/embed/1lpC0AL4_3A?si=rAWe2IfvH8jmopcB" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>10° Jornada E+E - "disCapacidades" | Germán Laborda | 2019</h3>
+        <h3>Jornada E+E - "disCapacidades" | 2019</h3>
         <iframe src="https://www.youtube.com/embed/HIoBRAKBeAA?si=KuyoBoso6gL63a9p" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>UEFA Foundation - Franquicias sociales | Fundación Empate | 2021</h3>
+        <h3>UEFA Foundation - Franquicias sociales | 2021</h3>
         <iframe src="https://www.youtube.com/embed/pUdADBmQMAU?si=b-wJ0YrcX5Xopv3R" frameborder="0" allowfullscreen></iframe>
-      </div>  
+      </div>
       <div class="video-item">
-        <h3>Inauguración Empate Mendoza - Fundacion Empate - UEFA Foundation | 2021</h3>
+        <h3>Inauguración Empate Mendoza | 2021</h3>
         <iframe src="https://www.youtube.com/embed/8BDCqatm5tw?si=VA8DiSrY2KqZ4DNq" frameborder="0" allowfullscreen></iframe>
-      </div>   
+      </div>
       <div class="video-item">
-        <h3>Inauguración Empate Tucuman - Fundacion Empate - UEFA Foundation | 2021</h3>
+        <h3>Inauguración Empate Tucumán | 2021</h3>
         <iframe src="https://www.youtube.com/embed/Uigz7RjpEsY?si=lljNueQgClGDqRsH" frameborder="0" allowfullscreen></iframe>
-      </div>    
+      </div>
       <div class="video-item">
-        <h3>Inauguración Empate Buenos Aires - Fundacion Empate - UEFA Foundation | 2021</h3>
+        <h3>Inauguración Empate Buenos Aires | 2021</h3>
         <iframe src="https://www.youtube.com/embed/wrEsB9sx5lg?si=QMLLDHgFtFeE2Tep" frameborder="0" allowfullscreen></iframe>
-      </div>               
+      </div>
       <div class="video-item">
         <h3>Inauguración Fundación Empate | 2017</h3>
         <iframe src="https://www.youtube.com/embed/VeLwUx94tdg?si=0xAPje1mIUeZACCC" frameborder="0" allowfullscreen></iframe>
-      </div>     
+      </div>
       <div class="video-item">
-        <h3>Premio Jeronimo Córdoba | Fundación Empate | 2017</h3>
+        <h3>Premio Jerónimo Córdoba | 2017</h3>
         <iframe src="https://www.youtube.com/embed/AI5n8fiHM1w?si=IrHnEH6KKNgQxFsq" frameborder="0" allowfullscreen></iframe>
-      </div>              
+      </div>
       <div class="video-item">
-        <h3>Stalkeo TV | Germán Laborda | 2019</h3>
+        <h3>Stalkeo TV | 2019</h3>
         <iframe src="https://www.youtube.com/embed/Pubb9eqdOI8?si=0Lss3lAFBnLc6-Q4" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>Anormales TV | Germán Laborda | 2020</h3>
+        <h3>Anormales TV | 2020</h3>
         <iframe src="https://www.youtube.com/embed/4KKGZ5Zo8tU?si=VYaVGYT3OLxzJfe8" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="video-item">
-        <h3>Me la juego TV | Germán Laborda | 2019</h3>
+        <h3>Me la juego TV | 2019</h3>
         <iframe src="https://www.youtube.com/embed/9Dv1Jc47Vi8?si=-nT6FhrVOagnaML8" frameborder="0" allowfullscreen></iframe>
       </div>
     </section>
   </main>
 
-  <footer>
-    <img src="../medios/logo.png" alt="Logo Fundación" class="logo-footer">
-    <p>Germán Laborda - presidente y fundador de Fundación Empate</p>
+  <footer class="cv-footer">
+    <p>© 2025 Germán Laborda · Fundación Empate</p>
   </footer>
 </body>
 </html>
+
+
