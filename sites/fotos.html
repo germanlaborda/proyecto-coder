@@ -1,80 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Galería de Medios - Germán Laborda</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">  
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="curriculum.html">Curriculum</a></li>
-        <li><a href="fotos.html">Galería de Fotos</a></li>
-        <li><a href="videos.html">Galería de Videos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+
+<body class="cv-body">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg cv-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">Germán Laborda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="curriculum.html">Currículum</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="fotos.html">Fotos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="videos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER BANNER -->
+  <header class="cv-banner">
+    <div class="cv-overlay">
+      <h1>Galería de Medios</h1>
+      <p>(Click en cada foto para descargar original)</p>
+    </div>
   </header>
 
-  <main>
-    <h1>Galería de Medios</h1>
-    <h2>(Click en cada foto para descargar original)</h2>
+
+  <main class="container">
+   <!-- <section class="titulo-seccion">
+      <h1>Galería de Medios</h1>
+      <h2>(Click en cada foto para descargar original)</h2>
+    </section>-->
+
     <section class="galeria">
-      <!-- Fotos German (12) -->
-      <figure><a href="../medios/german1.jpg" download><img src="../medios/german1.jpg" alt="German 1"></a></figure>
-      <figure><a href="../medios/german2.jpg" download><img src="../medios/german2.jpg" alt="German 2"></a></figure>
-      <figure><a href="../medios/german3.jpg" download><img src="../medios/german3.jpg" alt="German 3"></a></figure>
-      <figure><a href="../medios/german4.jpg" download><img src="../medios/german4.jpg" alt="German 4"></a></figure>
-      <figure><a href="../medios/german5.jpg" download><img src="../medios/german5.jpg" alt="German 5"></a></figure>
-      <figure><a href="../medios/german6.jpg" download><img src="../medios/german6.jpg" alt="German 6"></a></figure>
-      <figure><a href="../medios/german7.jpg" download><img src="../medios/german7.jpg" alt="German 7"></a></figure>
-      <figure><a href="../medios/german8.jpg" download><img src="../medios/german8.jpg" alt="German 8"></a></figure>
-      <figure><a href="../medios/german9.jpg" download><img src="../medios/german9.jpg" alt="German 9"></a></figure>
-      <figure><a href="../medios/german10.jpg" download><img src="../medios/german10.jpg" alt="German 10"></a></figure>
-      <figure><a href="../medios/german11.jpg" download><img src="../medios/german11.jpg" alt="German 11"></a></figure>
-      <figure><a href="../medios/german12.jpg" download><img src="../medios/german12.jpg" alt="German 12"></a></figure>
+      <!-- Fotos German -->
+      <div class="galeria-seccion">
+        <h3>Fotos personales</h3>
+        <div class="imagenes-grid">
+          <!-- 12 imágenes -->
+          <!-- Se repite este bloque por cada imagen -->
+          <figure><a href="../medios/german1.jpg" download><img src="../medios/german1.jpg" alt="German 1"></a></figure>
+          <figure><a href="../medios/german2.jpg" download><img src="../medios/german2.jpg" alt="German 2"></a></figure>
+          <figure><a href="../medios/german3.jpg" download><img src="../medios/german3.jpg" alt="German 3"></a></figure>
+          <figure><a href="../medios/german4.jpg" download><img src="../medios/german4.jpg" alt="German 4"></a></figure>
+          <figure><a href="../medios/german5.jpg" download><img src="../medios/german5.jpg" alt="German 5"></a></figure>
+          <figure><a href="../medios/german6.jpg" download><img src="../medios/german6.jpg" alt="German 6"></a></figure>
+          <figure><a href="../medios/german7.jpg" download><img src="../medios/german7.jpg" alt="German 7"></a></figure>
+          <figure><a href="../medios/german8.jpg" download><img src="../medios/german8.jpg" alt="German 8"></a></figure>
+          <figure><a href="../medios/german9.jpg" download><img src="../medios/german9.jpg" alt="German 9"></a></figure>
+          <figure><a href="../medios/german10.jpg" download><img src="../medios/german10.jpg" alt="German 10"></a></figure>
+          <figure><a href="../medios/german11.jpg" download><img src="../medios/german11.jpg" alt="German 11"></a></figure>
+          <figure><a href="../medios/german12.jpg" download><img src="../medios/german12.jpg" alt="German 12"></a></figure>
+        </div>
+      </div>
 
-      <!-- Foto Todos (1) -->
-      <figure><a href="../medios/todos.jpg" download><img src="../medios/todos.jpg" alt="Todos"></a></figure>
+      <!-- Foto Todos -->
+      <div class="galeria-seccion">
+        <h3>Foto staff</h3>
+        <div class="imagenes-grid">
+          <figure><a href="../medios/todos.jpg" download><img src="../medios/todos.jpg" alt="Todos"></a></figure>
+        </div>
+      </div>
 
-      <!-- Fotos Fútbol (11) -->
-      <figure><a href="../medios/futbol1.jpg" download><img src="../medios/futbol1.jpg" alt="Fútbol 1"></a></figure>
-      <figure><a href="../medios/futbol2.jpg" download><img src="../medios/futbol2.jpg" alt="Fútbol 2"></a></figure>
-      <figure><a href="../medios/futbol3.jpg" download><img src="../medios/futbol3.jpg" alt="Fútbol 3"></a></figure>
-      <figure><a href="../medios/futbol4.jpg" download><img src="../medios/futbol4.jpg" alt="Fútbol 4"></a></figure>
-      <figure><a href="../medios/futbol5.jpg" download><img src="../medios/futbol5.jpg" alt="Fútbol 5"></a></figure>
-      <figure><a href="../medios/futbol6.jpg" download><img src="../medios/futbol6.jpg" alt="Fútbol 6"></a></figure>
-      <figure><a href="../medios/futbol7.jpg" download><img src="../medios/futbol7.jpg" alt="Fútbol 7"></a></figure>
-      <figure><a href="../medios/futbol8.jpg" download><img src="../medios/futbol8.jpg" alt="Fútbol 8"></a></figure>
-      <figure><a href="../medios/futbol9.jpg" download><img src="../medios/futbol9.jpg" alt="Fútbol 9"></a></figure>
-      <figure><a href="../medios/futbol10.jpg" download><img src="../medios/futbol10.jpg" alt="Fútbol 10"></a></figure>
-      <figure><a href="../medios/futbol11.jpg" download><img src="../medios/futbol11.jpg" alt="Fútbol 11"></a></figure>
+      <!-- Fotos Fútbol -->
+      <div class="galeria-seccion">
+        <h3>Fotos de fútbol</h3>
+        <div class="imagenes-grid">
+          <figure><a href="../medios/futbol1.jpg" download><img src="../medios/futbol1.jpg" alt="Fútbol 1"></a></figure>
+          <figure><a href="../medios/futbol2.jpg" download><img src="../medios/futbol2.jpg" alt="Fútbol 2"></a></figure>
+          <figure><a href="../medios/futbol3.jpg" download><img src="../medios/futbol3.jpg" alt="Fútbol 3"></a></figure>
+          <figure><a href="../medios/futbol4.jpg" download><img src="../medios/futbol4.jpg" alt="Fútbol 4"></a></figure>
+          <figure><a href="../medios/futbol5.jpg" download><img src="../medios/futbol5.jpg" alt="Fútbol 5"></a></figure>
+          <figure><a href="../medios/futbol6.jpg" download><img src="../medios/futbol6.jpg" alt="Fútbol 6"></a></figure>
+          <figure><a href="../medios/futbol7.jpg" download><img src="../medios/futbol7.jpg" alt="Fútbol 7"></a></figure>
+          <figure><a href="../medios/futbol8.jpg" download><img src="../medios/futbol8.jpg" alt="Fútbol 8"></a></figure>
+          <figure><a href="../medios/futbol9.jpg" download><img src="../medios/futbol9.jpg" alt="Fútbol 9"></a></figure>
+          <figure><a href="../medios/futbol10.jpg" download><img src="../medios/futbol10.jpg" alt="Fútbol 10"></a></figure>
+          <figure><a href="../medios/futbol11.jpg" download><img src="../medios/futbol11.jpg" alt="Fútbol 11"></a></figure>
+        </div>
+      </div>
 
-      <!-- Fotos Arte (3) -->
-      <figure><a href="../medios/arte1.jpg" download><img src="../medios/arte1.jpg" alt="Arte 1"></a></figure>
-      <figure><a href="../medios/arte2.jpg" download><img src="../medios/arte2.jpg" alt="Arte 2"></a></figure>
-      <figure><a href="../medios/arte3.jpg" download><img src="../medios/arte3.jpg" alt="Arte 3"></a></figure>
+      <!-- Arte -->
+      <div class="galeria-seccion">
+        <h3>Fotos de arte</h3>
+        <div class="imagenes-grid">
+          <figure><a href="../medios/arte1.jpg" download><img src="../medios/arte1.jpg" alt="Arte 1"></a></figure>
+          <figure><a href="../medios/arte2.jpg" download><img src="../medios/arte2.jpg" alt="Arte 2"></a></figure>
+          <figure><a href="../medios/arte3.jpg" download><img src="../medios/arte3.jpg" alt="Arte 3"></a></figure>
+        </div>
+      </div>
 
-      <!-- Fotos Música (6) -->
-      <figure><a href="../medios/musica1.jpg" download><img src="../medios/musica1.jpg" alt="Música 1"></a></figure>
-      <figure><a href="../medios/musica2.jpg" download><img src="../medios/musica2.jpg" alt="Música 2"></a></figure>
-      <figure><a href="../medios/musica3.jpg" download><img src="../medios/musica3.jpg" alt="Música 3"></a></figure>
-      <figure><a href="../medios/musica4.jpg" download><img src="../medios/musica4.jpg" alt="Música 4"></a></figure>
-      <figure><a href="../medios/musica5.jpg" download><img src="../medios/musica5.jpg" alt="Música 5"></a></figure>
-      <figure><a href="../medios/musica6.jpg" download><img src="../medios/musica6.jpg" alt="Música 6"></a></figure>
+      <!-- Música -->
+      <div class="galeria-seccion">
+        <h3>Fotos de música</h3>
+        <div class="imagenes-grid">
+          <figure><a href="../medios/musica1.jpg" download><img src="../medios/musica1.jpg" alt="Música 1"></a></figure>
+          <figure><a href="../medios/musica2.jpg" download><img src="../medios/musica2.jpg" alt="Música 2"></a></figure>
+          <figure><a href="../medios/musica3.jpg" download><img src="../medios/musica3.jpg" alt="Música 3"></a></figure>
+          <figure><a href="../medios/musica4.jpg" download><img src="../medios/musica4.jpg" alt="Música 4"></a></figure>
+          <figure><a href="../medios/musica5.jpg" download><img src="../medios/musica5.jpg" alt="Música 5"></a></figure>
+          <figure><a href="../medios/musica6.jpg" download><img src="../medios/musica6.jpg" alt="Música 6"></a></figure>
+        </div>
+      </div>
 
-      <!-- Fotos Tenis (2) -->
-      <figure><a href="../medios/tenis1.jpg" download><img src="../medios/tenis1.jpg" alt="Tenis 1"></a></figure>
-      <figure><a href="../medios/tenis2.jpg" download><img src="../medios/tenis2.jpg" alt="Tenis 2"></a></figure>
+      <!-- Tenis -->
+      <div class="galeria-seccion">
+        <h3>Fotos de tenis</h3>
+        <div class="imagenes-grid">
+          <figure><a href="../medios/tenis1.jpg" download><img src="../medios/tenis1.jpg" alt="Tenis 1"></a></figure>
+          <figure><a href="../medios/tenis2.jpg" download><img src="../medios/tenis2.jpg" alt="Tenis 2"></a></figure>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <img src="../medios/logo.png" alt="Logo Fundación" class="logo-footer">
-    <p>Germán Laborda - presidente y fundador de Fundación Empate</p>
+  <footer class="cv-footer">
+    <p>© 2025 Germán Laborda · Fundación Empate</p>
   </footer>
 </body>
 </html>
