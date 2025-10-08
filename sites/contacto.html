@@ -4,31 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Germán Laborda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="curriculum.html">Curriculum</a></li>
-        <li><a href="fotos.html">Galería de Fotos</a></li>
-        <li><a href="videos.html">Galería de Videos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+
+<body class="cv-body">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg cv-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">Germán Laborda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="curriculum.html">Currículum</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="fotos.html">Fotos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="videos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER BANNER -->
+  <header class="cv-banner">
+    <div class="cv-overlay">
+      <h1>Formulario de contacto</h1>
+      <p>Si querés ponerte en contacto con Germán Laborda, completá el siguiente formulario:</p>
+    </div>
   </header>
 
-  <main>
-    <h1>Contacto</h1>
-    <p>Email: <a href="mailto:germanlaborda@fundaciónempate.org.arm">germanlaborda@example.com</a></p>
-    <p>Teléfono: <a href="tel:+5493516176108">+54 9 351 6176108</a></p>
-    
+  <main class="container contacto">
+    <section class="form-section">
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" required />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
   </main>
 
-  <footer>
-    <img src="../medios/logo.png" alt="Logo Fundación" class="logo-footer">
-    <p>Germán Laborda - presidente y fundador de Fundación Empate</p>
+  <footer class="cv-footer">
+    <p>© 2025 Germán Laborda · Fundación Empate</p>
   </footer>
 </body>
 </html>
