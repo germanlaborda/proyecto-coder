@@ -1,0 +1,85 @@
+// _contacto.scss
+
+.formulario-contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    button {
+      align-self: center;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #005fa3;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@media (max-width: 600px) {
+  .formulario-contacto {
+    padding: 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    form {
+      gap: 1rem;
+
+      input,
+      textarea {
+        font-size: 0.95rem;
+      }
+
+      button {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.5rem;
+      }
+    }
+  }
+}

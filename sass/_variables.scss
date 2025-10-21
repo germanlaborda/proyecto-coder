@@ -1,0 +1,60 @@
+// ================================
+// Variables globales del sitio
+// ================================
+
+// Colores
+$primary-color: #556B2F;   // verde oscuro - base para títulos y nav
+$secondary-color: #8FA31E; // verde medio - acentos y hovers
+$accent-color: #C6D870;    // verde claro - contraste
+$bg-light: #EFF5D2;        // fondo suave general
+$text-color: #222;         // texto legible
+$bg-dark: #1a1a1a;               // Fondos oscuros (footer o secciones especiales)
+$card-bg: #fafafa;               // Tarjetas/Cards
+$border-color: #dddddd;
+$background-color: #ffffff;
+
+// Tipografías
+$font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-title: 'Roboto Slab', serif;
+
+// Espaciado
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 48px;
+
+// Tamaños de fuente
+$font-xs: 0.75rem;
+$font-sm: 0.875rem;
+$font-md: 1rem;
+$font-lg: 1.25rem;
+$font-xl: 2rem;
+$font-xxl: 3rem;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Bordes
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+
+// Sombras
+$box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.05);
+$box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.1);
+$box-shadow-heavy: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+// Duraciones
+$transition-fast: 0.2s;
+$transition-normal: 0.4s;
+$transition-slow: 0.6s;
+
+// Z-index
+$z-index-base: 1;
+$z-index-dropdown: 1000;
+$z-index-modal: 1050;
+$z-index-overlay: 1100;

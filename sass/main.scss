@@ -1,0 +1,19 @@
+// 1. Variables siempre primero
+@use 'variables' as *;
+
+// 2. Estilos globales
+@use 'base';
+@use 'components';
+
+
+// 3. Componentes y secciones
+@use 'navbar';
+@use 'footer';
+
+// 4. Vistas específicas
+@use 'home';
+@use 'curriculum';
+@use 'fotos';
+@use 'videos';
+@use 'contacto';
+@use 'animations';

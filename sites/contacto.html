@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Germán Laborda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg cv-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">Germán Laborda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="curriculum.html">Currículum</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="fotos.html">Fotos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="videos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER BANNER -->
+  <header class="cv-banner">
+    <div class="cv-overlay">
+        <header class="home-header">
+          <h1 class="fade-in-up">Formulario de contacto</h1>
+        </header>
+      <p>Si querés ponerte en contacto con Germán Laborda, completá el siguiente formulario:</p>
+    </div>
+  </header>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <main class="main-content container my-5">
+    <form class="contact-form mx-auto">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+        <div class="col-12">
+          <label for="asunto" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="asunto" placeholder="Motivo del mensaje" required>
+        </div>
+        <div class="col-12">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+        <div class="col-12 text-end">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="cv-footer">
+    <p>© 2025 Germán Laborda · Fundación Empate</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

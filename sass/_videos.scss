@@ -1,0 +1,74 @@
+@use 'variables' as *;
+
+.videos-section {
+  background-color: $bg-light;
+  padding: 2.5rem 1rem;
+
+  h1 {
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: 3px solid $accent-color;
+      border-radius: 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .videos-section {
+    padding: 1.5rem;
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    .video-grid {
+      gap: 1.2rem;
+    }
+  }
+}
+
+
+.videos-page {
+  padding: 2rem;
+  background-color: $background-color;
+  color: $text-color;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $primary-color;
+  }
+
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .video-item {
+    animation: fadeInUp 0.8s ease both;
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    h3 {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: $primary-color;
+      text-align: center;
+    }
+  }
+}

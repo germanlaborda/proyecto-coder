@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+.btn-base {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $bg-light;
+  color: $text-color;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-title;
+  font-weight: 700;
+  color: $primary-color;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}

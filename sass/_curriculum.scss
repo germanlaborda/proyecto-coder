@@ -1,0 +1,176 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.cv-banner {
+  background: linear-gradient(rgba(85, 107, 47, 0.85), rgba(85, 107, 47, 0.85)),
+    url('../medios/foto-cv.jpg') center/cover no-repeat;
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-family: $font-title;
+    font-size: 3rem;
+    color: $accent-color;
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+}
+
+.cv-section {
+  padding: 2.5rem;
+  background-color: $bg-light;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+    border-left: 6px solid $secondary-color;
+    padding-left: 10px;
+  }
+}
+
+.cv-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  .cv-card {
+    @include card-style;
+    background-color: #fff;
+    color: $text-color;
+    flex: 1 1 280px;
+    text-align: center;
+    padding: 1.5rem;
+    border: 2px solid $secondary-color;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.cv-timeline {
+  border-left: 4px solid $secondary-color;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+
+  .cv-timeline-item {
+    margin-bottom: 1.8rem;
+
+    h3 {
+      color: $primary-color;
+      font-size: 1.3rem;
+    }
+
+    .fecha {
+      color: #555;
+      font-style: italic;
+    }
+
+    .cargo {
+      color: $secondary-color;
+      font-weight: bold;
+    }
+  }
+}
+
+.cv-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+
+  .cv-block {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid $accent-color;
+
+    h4 {
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $text-color;
+    }
+  }
+}
+
+.cv-award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+
+  .award-card {
+    @include card-style;
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+
+    h5 {
+      color: $accent-color;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #f0f0f0;
+    }
+  }
+}
+
+/* Animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-section {
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .cv-card-grid {
+    flex-direction: column;
+  }
+
+  .cv-timeline {
+    border-left: 3px solid $secondary-color;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  .cv-award-grid {
+    grid-template-columns: 1fr;
+  }
+}
